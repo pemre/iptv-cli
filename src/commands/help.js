@@ -3,22 +3,29 @@ import chalk from 'chalk';
 const menus = {
   main: `
 ${chalk.greenBright('iptv-cli [command] <options>')}
-  ${chalk.blueBright('filter-categories')} .. generate an iptv list filtered by allowed-categories.js file 
+  ${chalk.blueBright('filter')} ............. generate an iptv list filtered by at least one allowed-*.js file 
   ${chalk.blueBright('get-categories')} ..... generate categories file (allowed-categories.js) from an iptv list file
+  ${chalk.blueBright('get-channels')} ....... generate channels file (allowed-channels.js) from an iptv list file
   ${chalk.blueBright('version')} ............ show cli version
   ${chalk.blueBright('help')} ............... show help menu for a command
 `,
 
-  'filter-categories': `
-${chalk.greenBright('iptv-cli filter-categories <options>')}
-  --from-file ........... (required) set the source iptv channel list file. e.g. --from-file example.m3u
-  --allowed-categories .. (required) set the filter list. You can generate one with get-categories command.
-  --out ................. set the filename for filtered iptv list. default: iptv-list.m3u
+  filter: `
+${chalk.greenBright('iptv-cli filter <options> (at least one --allowed-* argument is required)')}
+  --from-file ........... (required) set the source iptv file. e.g. --from-file example.m3u
+  --allowed-categories .. filter by category file. You can generate the file with get-categories command.
+  --allowed-channels .... filter by channel ids file. You can generate one with get-channels command.
+  --out ................. set the filename for filtered iptv file. default: iptv-list.m3u
 `,
 
   'get-categories': `
 ${chalk.greenBright('iptv-cli get-categories <options>')}
-  --from-file ........... (required) set the source iptv channel list file. e.g. --from-file example.m3u
+  --from-file ........... (required) set the source iptv file. e.g. --from-file example.m3u
+`,
+
+  'get-channels': `
+${chalk.greenBright('iptv-cli get-channels <options>')}
+  --from-file ........... (required) set the source iptv file. e.g. --from-file example.m3u
 `,
 };
 

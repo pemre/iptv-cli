@@ -1,6 +1,6 @@
 import { getChannelsFromFile, writeListToFile } from '../lib/helpers';
 
-export const getCategories = (args) => {
+export const getChannels = (args) => {
   let channels = [];
 
   if (args['from-file']) {
@@ -10,10 +10,10 @@ export const getCategories = (args) => {
     return;
   }
 
-  const allCategories = channels.map((channel) => channel.inf.groupTitle.trim());
-  const categories = [...new Set(allCategories)] // Get unique list
+  channels = channels.map((channel) => channel.inf.tvgId);
+  channels = [...new Set(channels)] // Get unique list
     .filter((channel) => channel !== '') // Remove empty ones
-    .sort();
+    // .sort();
 
-  writeListToFile('allowed-categories.js', categories);
+  writeListToFile('allowed-channels.js', channels);
 };

@@ -1,4 +1,4 @@
-export const categories = [
+export const list = [
   // '24/7',
   // 'Africa',
   // 'Argentina',

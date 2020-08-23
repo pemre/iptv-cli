@@ -1,9 +1,9 @@
 export const getAbsolutePath = (relativePath) => require('path').resolve(process.cwd(), relativePath);
 
-export const getCategoriesFromFile = (filename) => {
+export const getListFromFile = (filename) => {
   const absolutePath = getAbsolutePath(filename);
-  const { categories } = require(absolutePath);
-  return categories;
+  const { list } = require(absolutePath);
+  return list;
 };
 
 export const getChannelsFromFile = (filename) => {
@@ -21,4 +21,12 @@ export const writeFile = (filename, data) => {
     if (err) return console.log(err);
     console.log(`File has been created: ${filename}`);
   });
+};
+
+export const writeListToFile = (filename, list) => {
+  let data = `export const list = [\n  '`;
+  data += list.join(`',\n  '`);
+  data += `',\n];\n`;
+
+  writeFile(filename, data);
 };

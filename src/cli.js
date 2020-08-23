@@ -1,6 +1,7 @@
 import minimist from 'minimist';
-import { filterCategories } from './commands/filter-categories';
+import { filter } from './commands/filter';
 import { getCategories } from './commands/get-categories';
+import { getChannels } from './commands/get-channels';
 import { help } from './commands/help';
 import { version } from './commands/version';
 
@@ -23,11 +24,14 @@ export function cli(argsArray) {
     case 'help':
       help(args);
       break;
-    case 'filter-categories':
-      filterCategories(args);
+    case 'filter':
+      filter(args);
       break;
     case 'get-categories':
       getCategories(args);
+      break;
+    case 'get-channels':
+      getChannels(args);
       break;
     default:
       console.error(`"${cmd}" is not a valid command!`);
