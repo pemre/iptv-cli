@@ -1,0 +1,27 @@
+#EXTM3U
+#EXTINF:-1 tvg-id=""    tvg-name="TR:--- YEREL ---"    tvg-logo=""                    group-title="TR Yerel",TR:--- YEREL ---
+http://channel.com/1
+#EXTINF:-1 tvg-id="cif" tvg-name="TR2:Ciftci TV"       tvg-logo="http://l.com/2.png"  group-title="TR Yerel",TR2:Ciftci TV
+http://channel.com/2
+#EXTINF:-1 tvg-id="ysl" tvg-name="TR3:YESILCAM TV"     tvg-logo="http://l.com/3.png"  group-title="TR Yerel",TR3:YESILCAM TV
+http://channel.com/3
+#EXTINF:-1 tvg-id="kem" tvg-name="TR4:KEMAL SUNAL"     tvg-logo="http://l.com/4.png"  group-title="TR Yerel",TR4:KEMAL SUNAL
+http://channel.com/4
+#EXTINF:-1 tvg-id=""    tvg-name="TR:--- HABER ---"    tvg-logo=""                    group-title="TR Haber",TR:--- HABER ---
+http://channel.com/5
+#EXTINF:-1 tvg-id="trt" tvg-name="TR6:TRT HABER"       tvg-logo="http://l.com/5.png"  group-title="TR Haber",TR6:TRT HABER
+http://channel.com/6
+#EXTINF:-1 tvg-id=""    tvg-name="TR:--- BELGESEL ---" tvg-logo=""                    group-title="TR Belgesel",TR:--- BELGESEL ---
+http://channel.com/7
+#EXTINF:-1 tvg-id="yab" tvg-name="TR8:YABAN TV"        tvg-logo="http://l.com/8.png"  group-title="TR Belgesel",TR8:YABAN TV
+http://channel.com/8
+#EXTINF:-1 tvg-id="geo" tvg-name="TR9:NAT GEO"         tvg-logo="http://l.com/9.png"  group-title="TR Belgesel",TR9:NAT GEO
+http://channel.com/9
+#EXTINF:-1 tvg-id="bel" tvg-name="TR10:TRT"            tvg-logo="http://l.com/10.png" group-title="TR Belgesel",TR10:TRT
+http://channel.com/10
+#EXTINF:-1 tvg-id=""    tvg-name="TR:--- ULUSAL ---"   tvg-logo=""                    group-title="TR Ulusal",TR:--- ULUSAL ---
+http://channel.com/11
+#EXTINF:-1 tvg-id="shw" tvg-name="TR12:SHOW TV"        tvg-logo="http://l.com/13.png" group-title="TR Ulusal",TR12:SHOW TV
+http://channel.com/12
+#EXTINF:-1 tvg-id="str" tvg-name="TR13:STAR TV"        tvg-logo="http://l.com/13.png" group-title="TR Ulusal",TR13:STAR TV
+http://channel.com/13
