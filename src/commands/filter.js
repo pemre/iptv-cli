@@ -13,7 +13,7 @@ export const filter = (args) => {
   let allowedCategories = [];
   let allowedChannels = [];
 
-  if (!args['allowed-channels'] && !args['allowed-channels']) {
+  if (!args['allowed-channels'] && !args['allowed-categories']) {
     console.error(`Error: Missing arguments. At least one allowed argument must be used.`);
     return;
   }
