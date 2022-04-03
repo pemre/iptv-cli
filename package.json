@@ -1,6 +1,6 @@
 {
   "name": "iptv-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "iptv-cli is a command line tool to parse, filter iptv lists (m3u/m3u8 files).",
   "license": "GPL-3.0",
   "author": "Emre Piskin <piskin.emre@gmail.com>",
@@ -19,7 +19,7 @@
     "chalk": "^4.1.0",
     "esm": "^3.2.25",
     "m3u8-file-parser": "^0.2.3",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   },
   "devDependencies": {}
 }
